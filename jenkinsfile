@@ -24,15 +24,6 @@ pipeline {
 				}
 			}
         }
-        stage(deploy) {
-            steps {
-                sh './Amazon/scripts/deploy.sh'
-            }
-        }
-        stage(start) {
-            steps {
-                sh './Amazon/scripts/start.sh'
-            }
-        }
+        
     }
 }   
