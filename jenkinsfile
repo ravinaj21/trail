@@ -28,10 +28,10 @@ pipeline {
           steps {
            script {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-             withCredentials([usernamePassword(credentialsId: 'ravina', passwordVariable: 'ravina@1914')]) {
+             withCredentials([usernamePassword(credentialsId: 'ravinajetwani21@gmail.com', passwordVariable: 'ravina@1914')]) {
               sh "git add ."
               sh "git commit -m 'Triggered Build'"
-              sh "git push https://ravina:ravina@1914@github.com/ravinaj21/trail.git"
+              sh "git push https://ravinajetwani21@gmail.com:ravina@1914@github.com/ravinaj21/trail.git"
              }
            }
          }
